@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h3>This is index page</h3>
+
+{% for name in names %}
+<h2>{{ name.name }}</h2>
+<p>{{ name.date_now }}</p>
+
+{% empty %}
+<p>No name to show.</p>
+
+
+{% endfor%}
+
+{% endblock %}
